@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../public/img/fondoL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitle {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffebcd;
+}
+
+.secTitle {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffebcd;
+}
+
+.displayReg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formCont {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #83476B;
+    padding: 10px;
+}
+
+.firstForm {
+    /*width: 40%;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* repeat(2, minmax(100px, 1fr)); */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+
+.sendBtn:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.btnForm {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.actionBtn {
+    border-radius: 10px;
+}
+
+.actionBtnCont {
+    padding: 5px;
+}
+
+.firstForm .inputForm {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid lightblue;
+}
+
+.thirdTitle {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffebcd;
+}
+
+.tableCont {
+    text-align: center;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 65vh;
+    width: 80%;
+    justify-content: center; 
+}
+
+.tableMain {
+    border-collapse: collapse;
+}
+.tableCont table {
+    width: 100%;
+}
+.light {
+    background-color: #1B93A1;
+    transition: opacity 0.3 ease;
+}
+
+.dark {
+    background-color: #65A6A2;
+    transition: opacity 0.3 ease;
+}
+
+.tblHead {
+    background-color: #AA81A3;
+}
+
+/*Transición*/
+.mainTitle h1:hover{
+    color: gold;
+    opacity: 0.8;
+}
+
+.secTitle h2:hover{
+    color: gold;
+    opacity: 0.8;
+}
+.thirdTitle h2:hover{
+    color: gold;
+    opacity: 0.8;
+}
+
+.light:hover {
+    opacity: 0.7;
+    color: gold;
+}
+.dark:hover {
+    opacity: 0.7;
+    color: gold;
+}
+.tblHead:hover {
+    color: gold;
+}
